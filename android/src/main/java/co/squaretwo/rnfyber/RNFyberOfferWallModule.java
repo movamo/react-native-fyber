@@ -100,7 +100,7 @@ public class RNFyberOfferWallModule extends ReactContextBaseJavaModule {
                         callback.invoke("OfferWall is not ready.");
                     }
                 };
-                OfferWallRequester.create(requestCallback).request(mContext);
+                OfferWallRequester.create(requestCallback).addParameter("pub0", "offerWall").request(mContext);
             }
         });
     }

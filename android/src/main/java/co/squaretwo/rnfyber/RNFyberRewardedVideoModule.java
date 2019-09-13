@@ -119,7 +119,7 @@ public class RNFyberRewardedVideoModule extends ReactContextBaseJavaModule {
                     }
                 };
 
-                RewardedVideoRequester.create(requestCallback).request(mContext);
+                RewardedVideoRequester.create(requestCallback).addParameter("pub0", "video").request(mContext);
             }
         });
     }
