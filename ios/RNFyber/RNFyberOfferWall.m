@@ -49,8 +49,11 @@ RCT_EXPORT_METHOD(requestOfferWall:(RCTResponseSenderBlock)callback)
 RCT_EXPORT_METHOD(showOfferWall)
 {
 
+  FYBRequestParameters *parameters = [[FYBRequestParameters alloc] init];
+  [parameters addCustomParameters:@{@"pub0": @"offerWall"}];
+
   FYBOfferWallViewController *offerWallViewController = [FyberSDK offerWallViewController];
-  [offerWallViewController presentFromViewController:[UIApplication sharedApplication].delegate.window.rootViewController animated:YES completion:^{
+  [offerWallViewController presentFromViewController:[UIApplication sharedApplication].delegate.window.rootViewController parameters:parameters animated:YES completion:^{
 
       NSLog(@"Offer Wall presented");
       [self sendEventWithName:kOfferWallDidStart body:nil];

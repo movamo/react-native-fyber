@@ -36,7 +36,12 @@ RCT_EXPORT_METHOD(requestRewardedVideo:(RCTResponseSenderBlock)callback)
     NSLog(@"requestRewardedVideo!");
     rewardedVideoController = [FyberSDK rewardedVideoController];
     rewardedVideoController.delegate = self;
-    [rewardedVideoController requestVideo];
+    
+    FYBRequestParameters *parameters = [[FYBRequestParameters alloc] init];
+    [parameters addCustomParameters:@{@"pub0": @"video"}];
+
+    [rewardedVideoController requestVideoWithParameters:parameters ];
+    
     _requestVideoCallback = callback;
 }
 
