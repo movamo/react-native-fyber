@@ -18,5 +18,5 @@
 
 #import "FyberSDK.h"
 
-@interface RNFyberOfferWall : RCTEventEmitter <RCTBridgeModule, FYBRewardedVideoControllerDelegate>
+@interface RNFyberOfferWall : RCTEventEmitter <RCTBridgeModule>
 @end
