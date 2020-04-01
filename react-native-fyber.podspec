@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.dependency      'React'
 
   s.subspec 'Fyber' do |ss|
-    ss.dependency     'FyberSDK', '~> 9.0.0'
+    ss.dependency     'FyberSDK', '~> 9.1.1'
     ss.source_files = 'ios/RNFyber/*.{h,m}'
 
   end
