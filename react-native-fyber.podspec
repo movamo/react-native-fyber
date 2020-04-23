@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license       = package['license']
   s.homepage      = package['homepage']
   s.source        = { :git => 'https://github.com/hwde/react-native-fyber', :branch => "fyber8.21.0" }
-  s.platform      = :ios, '7.0'
+  s.platform      = :ios, '9.0'
   s.source_files = "ios/**/*.{h,m,swift}"
   s.requires_arc = true
   s.dependency      'React'

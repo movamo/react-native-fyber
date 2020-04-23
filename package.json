@@ -1,6 +1,6 @@
 {
   "name": "react-native-fyber",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "A react-native interface for using Fyber for advertising via Offerwall, Rewarded Video, Banner, and Intersitials",
   "main": "index.js",
   "keywords": [
